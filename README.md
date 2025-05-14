@@ -1,2 +1,21 @@
-# ProductScraperPlatform
-Web scraping platform for collecting e-commerce product data using Selenium and Django REST Framework.
+# Проект с Celery, Django и Redis
+
+Этот проект настроен для выполнения асинхронных задач парсинга с использованием Celery и Redis. В качестве теста используется сайт [Quotes to Scrape](https://quotes.toscrape.com/).
+
+## Описание
+
+- **Django** используется для обработки запросов и управления задачами.
+- **Celery** асинхронно обрабатывает задачи парсинга.
+- **Redis** служит брокером для Celery.
+
+## Структура проекта
+
+- `web`: контейнер для Django, который запускает сервер разработки.
+- `redis`: контейнер для Redis, который используется как брокер сообщений для Celery.
+- `celery`: контейнер для работы с Celery и выполнения задач парсинга.
+
+## Требования
+
+- Docker
+- Docker Compose
+
